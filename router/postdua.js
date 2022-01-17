@@ -2,6 +2,7 @@ const router = require("express").Router();
 const Categories = require("../model/categoryModel");
 const SubCatLists = require("../model/SubCatList");
 const Dua = require("../model/duaModel");
+
 router.post("/category", async (req, res) => {
   try {
     const postData = new Categories({
